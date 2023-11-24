@@ -1,0 +1,211 @@
+header{
+    width: 100%;
+    height: 250px;
+    background-image: url('sea.jpg');
+    background-size: cover;
+    background-position-y:-250px;
+    position: relative;
+	box-shadow: 0px 0px 10px #000;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: transparent;
+	transition: background-color 0.3s ease;
+    z-index : 2;
+}
+#nav > a::after {
+  content: "";
+  position: absolute;
+  height: 10%;
+  bottom: 0;
+  left: -.5rem;
+  right: calc(100% + .5rem);
+  background-color: #bbccff;
+  transition: 300ms ease-in-out;
+  pointer-events: none;
+  z-index: -1;
+}
+#nav > a:hover::after {
+  right: -.5rem;
+}
+span{
+    margin-left: 20px;
+}
+ul{
+    display: inline-block;
+    list-style-type: none;
+}
+#nav{
+    position: relative;
+    float: left;
+    top:20px;
+    margin-right: 30px;
+}
+a{
+    text-decoration-line:none;
+}
+#nav > a{
+    color: white;
+    text-decoration-line:none;
+}
+
+.login{
+    color: white;
+    position: relative;
+    float: right;
+    margin-top: 30px;
+}
+.username{
+    color: white;
+}
+.login > a{
+    margin-right: 10px;
+    text-decoration-line:none;
+}
+#id{
+    display: flex;
+    float: left;
+}
+section{
+    position: relative;
+    margin: auto;
+    width: 1400px;
+    height: 100%;
+}
+.button{
+    position: relative;
+    top:60px;
+    left: 300px;
+    border: 0;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.picbox
+{
+	margin-left:18%;
+}
+.pic {
+    position: relative;
+    display: inline-block; /* 요소를 가로로 일렬로 표시 */
+    margin-left: 10px; /* 각 .pic 요소 사이의 간격 조정 */
+    margin-top: 100px;
+    overflow: hidden;
+    max-width: 200px;
+}
+.pic img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.pic img:hover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: black;
+    opacity: 0.5;
+}
+.pic p {
+	text-align:center;
+	color: #bcbcbc;
+	font-size : 0.9rem;
+    white-space: nowrap; /* 텍스트 줄 바꿈 비활성화 */
+    overflow: hidden; /* 넘치는 부분을 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트에 ... 추가 */
+}
+.p_title{
+	position:relative;
+	margin-top:210px;
+	margin-left:3px;
+	font-size:14px;
+}
+.p_title a{
+	color:gray;
+}
+.p_title a:hover{
+	color:black;
+}
+.p_title2{
+	position:relative;
+	margin-top:210px;
+	font-size:14px;
+}
+.p_title2 a{
+	color:gray;
+}
+.p_title2 a:hover{
+	color:black;
+}
+.p_title3{
+	position:relative;
+	margin-top:210px;
+	font-size:14px;
+}
+.p_title3 a{
+	color:gray;
+}
+.p_title3 a:hover{
+	color:black;
+}
+.p_title4{
+	position:relative;
+	margin-top:210px;
+	font-size:14px;
+}
+.p_title4 a{
+	color:gray;
+}
+.p_title4 a:hover{
+	color:black;
+}
+.list td{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #494949;
+}
+footer p{
+    color: #bcbcbc;
+    font-size: 0.7rem;
+    margin-bottom:1px;
+    margin-left: 20px;
+}
+.ft1{
+    display: inline-block;
+}
+.ft2{
+    position: relative;
+    float: right;
+    margin-right: 50px;
+    margin-top: 95px;
+}
+.ft2 > p{
+    display: inline-block;
+    margin-right: -15px;
+}
+
+.ft2 a{
+    color: #bcbcbc;
+    text-decoration: none;
+}
+.custom-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.quick{
+	color:gray;
+	margin-left:370px;
+	font-size: 24px;
+    font-weight: bold;
+}
